@@ -52,6 +52,16 @@
       "category": "productivity"
     },
     {
+      "name": "todoist",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rschlek/todoist.git",
+        "ref": "stable"
+      },
+      "description": "Todoist skills: add a well-formed task, triage the Inbox and walk the overdue pile, prune stale ideas, reconcile the board, review its structure, and tackle a task. Reads your own conventions from a connected memory tool or a per-user file, else ships sensible defaults.",
+      "category": "productivity"
+    },
+    {
       "name": "memory",
       "source": {
         "source": "url",

@@ -69,6 +69,19 @@
       "category": "Productivity"
     },
     {
+      "name": "todoist",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rschlek/todoist.git",
+        "ref": "stable"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
       "name": "memory",
       "source": {
         "source": "url",
