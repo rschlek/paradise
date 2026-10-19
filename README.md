@@ -101,7 +101,7 @@ In short:
 | Plugin | What it is | Default |
 | --- | --- | --- |
 | `paradise` | The setup door: `setup`, `claude-code-setup`, `codex-setup`. Lives in this repo. | yes |
-| [`productivity`](https://github.com/rschlek/productivity) | handoff, grill-me, watch, explain, untangle, write-a-skill. | yes |
+| [`productivity`](https://github.com/rschlek/productivity) | handoff, grill-me, watch, explain, untangle, write-a-skill, deepen. | yes |
 | [`terminal`](https://github.com/rschlek/terminal) | A shared WezTerm window for interactive logins, seeded chats in Warp tabs, Warp and WezTerm setup. | yes |
 | [`project-guide`](https://github.com/rschlek/project-guide) | A small standard for laying out and describing projects, with skills to apply it. | offered |
 | [`playwright-mcp-shared`](https://github.com/rschlek/playwright-mcp-shared) | One Playwright MCP browser shared safely by concurrent agent sessions. | offered |
