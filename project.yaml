@@ -1,0 +1,13 @@
+project: paradise
+title: Paradise
+summary: "A public Claude Code and Codex plugin marketplace with a one-line terminal setup, and a template for anyone who wants a plugin marketplace of their own."
+scope: personal
+visibility: public
+# tracking:
+# memory:
+links:
+  productivity: https://github.com/rschlek/productivity
+  terminal: https://github.com/rschlek/terminal
+  project-guide: https://github.com/rschlek/project-guide
+  playwright-mcp-shared: https://github.com/rschlek/playwright-mcp-shared
+  memory: https://github.com/rschlek/memory

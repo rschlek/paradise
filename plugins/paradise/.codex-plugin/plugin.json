@@ -1,0 +1,24 @@
+{
+  "name": "paradise",
+  "version": "0.3.0",
+  "description": "The Paradise setup door for Claude Code and Codex: install the plugins you pick, apply a portable settings and guidance baseline that backs up first and never touches your own text outside its markers, and set up Codex features and hook trust.",
+  "author": {
+    "name": "The Paradise maintainers"
+  },
+  "repository": "https://github.com/rschlek/paradise",
+  "license": "MIT",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Paradise",
+    "shortDescription": "Set up Claude Code and Codex in the terminal with a portable baseline.",
+    "longDescription": "The setup door for the Paradise marketplace. setup asks one batch of questions, installs the chosen plugins, and runs the focused skills: claude-code-setup merges a few universal settings keys, installs a context-meter statusline, and writes a marker-bounded guidance block into the global CLAUDE.md (and the same block into Codex's AGENTS.md), backing up each file first; codex-setup enables plugin hooks, leaves the built-in memories choice to the user, and walks through one-time hook trust.",
+    "developerName": "The Paradise maintainers",
+    "category": "Productivity",
+    "defaultPrompt": "Set me up with Paradise.",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Interactive"
+    ]
+  }
+}

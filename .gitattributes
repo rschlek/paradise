@@ -1,0 +1,4 @@
+# Shell scripts must stay LF so they run under bash on every device
+# (a CRLF checkout breaks the shebang and trips bash on the trailing ).
+*.sh text eol=lf
+*.py text eol=lf

@@ -1,0 +1,65 @@
+{
+  "name": "paradise",
+  "owner": {
+    "name": "rschlek"
+  },
+  "description": "A small Claude Code and Codex plugin marketplace: a one-command terminal setup plus a handful of portable plugins for working with coding agents.",
+  "plugins": [
+    {
+      "name": "paradise",
+      "source": "./plugins/paradise",
+      "description": "The setup door: one setup skill that installs the plugins you pick, applies a portable Claude Code baseline (settings, statusline, and a marker-bounded guidance block in your global CLAUDE.md, backed up first), sets up Codex when present, and hands off to terminal setup.",
+      "category": "productivity"
+    },
+    {
+      "name": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rschlek/productivity.git",
+        "ref": "stable"
+      },
+      "description": "Portable productivity skills: handoff (compact the conversation for another agent), grill-me (stress-test a plan by interview), watch (a monitor outside the chat), explain (problem, mechanism, options, recommendation, then wait for the go), untangle (the agent's pile turned into small plain decisions, one at a time), and write-a-skill (author a skill to a short set of conventions).",
+      "category": "productivity"
+    },
+    {
+      "name": "terminal",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rschlek/terminal.git",
+        "ref": "stable"
+      },
+      "description": "Terminal skills: a shared WezTerm window for interactive logins, seeded chats in new Warp tabs, a per-agent Warp tab menu, and Warp and WezTerm setup.",
+      "category": "productivity"
+    },
+    {
+      "name": "project-guide",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rschlek/project-guide.git",
+        "ref": "stable"
+      },
+      "description": "A simple standard for laying out, naming, and describing projects, with skills to create a new project to it or bring an existing repository up to it.",
+      "category": "productivity"
+    },
+    {
+      "name": "playwright-mcp-shared",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rschlek/playwright-mcp-shared.git",
+        "ref": "stable"
+      },
+      "description": "Shared Playwright browser: one loopback-only Playwright MCP service and persistent Chrome profile shared safely by concurrent agent clients, with tab claims, an auth lease, a launch-tab dashboard, and on-demand browser start.",
+      "category": "productivity"
+    },
+    {
+      "name": "memory",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rschlek/memory.git",
+        "ref": "stable"
+      },
+      "description": "Long-term memory skills on a Hindsight memory bank: situate (catch up before work), remember and learn (save a source or a researched synthesis), and sweep (save what landed before a session closes). Needs a running Hindsight memory server (open source) that you host or reach; not part of the default setup.",
+      "category": "productivity"
+    }
+  ]
+}

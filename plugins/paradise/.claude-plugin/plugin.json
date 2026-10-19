@@ -1,0 +1,9 @@
+{
+  "name": "paradise",
+  "description": "The Paradise setup door: setup installs the plugins you pick from this marketplace, claude-code-setup applies a portable Claude Code baseline (settings keys, a statusline, and a marker-bounded guidance block in your global CLAUDE.md, backed up first), and codex-setup does the same for Codex when it is present.",
+  "author": {
+    "name": "The Paradise maintainers"
+  },
+  "repository": "https://github.com/rschlek/paradise",
+  "license": "MIT"
+}

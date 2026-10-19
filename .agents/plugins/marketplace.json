@@ -1,0 +1,85 @@
+{
+  "name": "paradise",
+  "interface": {
+    "displayName": "Paradise"
+  },
+  "plugins": [
+    {
+      "name": "paradise",
+      "source": {
+        "source": "local",
+        "path": "./plugins/paradise"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "terminal",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rschlek/terminal.git",
+        "ref": "stable"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rschlek/productivity.git",
+        "ref": "stable"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "project-guide",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rschlek/project-guide.git",
+        "ref": "stable"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "playwright-mcp-shared",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rschlek/playwright-mcp-shared.git",
+        "ref": "stable"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "memory",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rschlek/memory.git",
+        "ref": "stable"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

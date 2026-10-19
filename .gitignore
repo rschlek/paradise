@@ -1,0 +1,23 @@
+# Worktrees (project-guide standard)
+.claude/worktrees/
+
+# Local harness state
+.claude/settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors
+*.swp
+*~
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# Local public-hygiene words (scripts/validate.py); never commit
+.hygiene-local
