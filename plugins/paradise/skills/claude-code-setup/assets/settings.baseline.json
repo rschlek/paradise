@@ -4,6 +4,7 @@
     "pr": ""
   },
   "agentPushNotifEnabled": true,
+  "idleCompaction": false,
   "statusLine": {
     "type": "command",
     "command": "bash ~/.claude/statusline-command.sh"
