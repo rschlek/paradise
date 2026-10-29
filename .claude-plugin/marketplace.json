@@ -18,7 +18,7 @@
         "url": "https://github.com/rschlek/productivity.git",
         "ref": "stable"
       },
-      "description": "Portable productivity skills: handoff (compact the conversation for another agent), grill-me (stress-test a plan by interview), watch (a monitor outside the chat), explain (problem, mechanism, options, recommendation, then wait for the go), untangle (the agent's pile turned into small plain decisions, one at a time), write-a-skill (author a skill to a short set of conventions), and deepen (rewrite a task into the deeper version a top professional would ask for, then wait for the go).",
+      "description": "Portable productivity skills: handoff (compact the conversation for another agent), grill-me (stress-test a plan by interview), watch (a monitor outside the chat), explain (one thing in plain language, no decisions attached), untangle (the agent's pile turned into small plain decisions, one at a time), and write-a-skill (author a skill to a short set of conventions).",
       "category": "productivity"
     },
     {
