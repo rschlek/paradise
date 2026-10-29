@@ -48,7 +48,10 @@ one of them is in the Codex catalog too.
    statusline is skipped with a note.
 5. Sets up Codex features (plugin hooks on, built-in memories your call).
 6. Hands off to Warp or WezTerm setup if you picked one.
-7. Reports what changed, where the backups are, and how to undo it.
+7. If a keep-awake utility that works by faking keypresses is running
+   (Caffeine on Windows), offers to relaunch it in its no-input mode, so each
+   tick stops scrolling your terminal to the bottom.
+8. Reports what changed, where the backups are, and how to undo it.
 
 Every step checks first and skips what is already in place, so running it
 again is safe.
