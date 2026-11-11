@@ -1,6 +1,6 @@
 {
   "name": "paradise",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "The Paradise setup door for Claude Code and Codex: install the plugins you pick, apply a portable settings and guidance baseline that backs up first and never touches your own text outside its markers, and set up Codex features and hook trust.",
   "author": {
     "name": "The Paradise maintainers"
