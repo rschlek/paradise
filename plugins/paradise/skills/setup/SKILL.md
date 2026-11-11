@@ -38,6 +38,14 @@ to be after the restart in step 4.
      unchecked: `memory`, which needs a Hindsight memory server; off unless
      the user has one.
    - Terminal: Warp, WezTerm, or neither.
+   - Keep-awake tool, asked only when one that works by faking keypresses is
+     running (on Windows, Caffeine: a `caffeine64.exe` or `caffeine.exe`
+     process with neither `-stes` nor `-allowss` on its command line):
+     relaunch it in its no-input mode, or leave it. Every faked key reaches
+     the focused terminal as typing and jumps it to the bottom of the
+     scrollback. The no-input mode keeps the machine awake through the OS
+     power API instead, so anything that watches for input to show presence
+     (chat status, for example) stops seeing activity; say so.
    - Codex: present on this machine? Check for `~/.codex/` or a `codex`
      command first and offer the answer as the default.
    - Guidance block for Claude: install it / show me first / skip. On "show
@@ -56,7 +64,7 @@ to be after the restart in step 4.
 4. **Restart if plugins were just installed.** Plugins installed this session
    load at the next session start. If step 3 installed anything and a later
    step hands off to one of those plugins' skills (such as
-   `terminal:warp-setup`), finish steps 5 and 6 (they need nothing new), then
+   `terminal:warp-setup`), finish steps 5, 6, and 8 (they need nothing new), then
    tell the user to restart Claude Code and run `/paradise:setup` again; the
    skill detects what is already done and continues. Stop there with the
    report in step 8.
@@ -70,8 +78,17 @@ to be after the restart in step 4.
 7. **Terminal.** For Warp, hand off to `terminal:warp-setup`; for WezTerm, to
    `terminal:wezterm-setup`. If the skill is still not available, the plugin
    did not load: check `claude plugin list` and repeat the restart in step 4.
-8. **Report**:
+8. **Keep-awake tool.** If the user chose the relaunch, stop the running
+   process and start it again from the same path with `-stes` added
+   (`-allowss` when the screensaver should still run), then confirm the flag
+   on the new process's command line. The tool keeps no record of its flags,
+   so also write a shortcut beside the executable that carries the flag, and
+   name any autostart entry (Run key, Startup folder, scheduled task) that
+   still launches it bare.
+9. **Report**:
    - what was installed, in each harness, and what was already in place;
+   - whether the keep-awake tool was relaunched, with which flag, and where
+     the shortcut went;
    - what changed on disk, file by file, and what was already current;
    - where each backup is (`*.paradise-backup-*` beside the original);
    - how to undo: copy a backup back over its original; or delete the block
