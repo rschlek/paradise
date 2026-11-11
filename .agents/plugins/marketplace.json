@@ -43,10 +43,10 @@
       "category": "Productivity"
     },
     {
-      "name": "project-guide",
+      "name": "playbook",
       "source": {
         "source": "url",
-        "url": "https://github.com/rschlek/project-guide.git",
+        "url": "https://github.com/rschlek/playbook.git",
         "ref": "stable"
       },
       "policy": {

@@ -62,8 +62,9 @@ on any machine):
 | --- | ----- | --- |
 | `attribution` | `{ "commit": "", "pr": "" }` | No Claude attribution text in commits/PRs. (Modern replacement for `includeCoAuthoredBy`, which is ignored when `attribution` is set - so we do not write the old key.) |
 | `agentPushNotifEnabled` | `true` | Phone push when a long task finishes or input is needed (no-op unless Remote Control is connected - pure upside). |
-| `idleCompaction` | `false` | No compaction behind the user's back. By default Claude Code (2.1.290+) summarizes a long conversation after about an hour idle and sends the summary with the next message, so a session comes back lossy without anyone choosing it. Compaction stays a deliberate act: the statusline's red band is the cue, `/compact` or a fresh session is the response. Threshold auto-compact (`autoCompactEnabled`) is left alone. Older versions ignore the key. |
-| `statusLine` | `{ "type": "command", "command": "bash ~/.claude/statusline-command.sh" }` | Always-visible context meter: the bundled script shows model, dir, git branch, and a color-coded context-usage percentage. Model quality degrades well before the window is full, so the red band (>= 70%) is the user's signal to `/compact` or start a fresh session - a deliberate manual ritual, not an automated one. |
+| `idleCompaction` | `false` | No compaction behind the user's back. By default Claude Code (2.1.290+) summarizes a long conversation after about an hour idle and sends the summary with the next message, so a session comes back lossy without anyone choosing it. Apart from the size threshold below, compaction stays a deliberate act: the statusline's red band is the cue, `/compact` or a fresh session is the response. The on/off toggle for threshold auto-compact (`autoCompactEnabled`) is left alone; where that threshold sits is set by `autoCompactWindow`. Older versions ignore the key. |
+| `autoCompactWindow` | `400000` | Automatic compaction at about 400K tokens of conversation, so long sessions stay in the range where model quality holds up without the user having to ask for compaction by hand. Without it, a model with a native 1M-token window compacts at about 967K. Claude Code caps the value at the model's context window: on a 1M-window model it compacts at about 40% full, and on a 200K-window model it has no effect. Accepts 100000 to 1000000 tokens, or `"auto"`. The `CLAUDE_CODE_AUTO_COMPACT_WINDOW` environment variable overrides it, and `/autocompact <n>` saves a per-model value under `modelSettings.autoCompactWindow`. The on/off toggle `autoCompactEnabled` is still not managed. |
+| `statusLine` | `{ "type": "command", "command": "bash ~/.claude/statusline-command.sh" }` | Always-visible context meter: the bundled script shows model, dir, git branch, and a color-coded context-usage percentage. Model quality degrades well before the window is full, so the red band (>= 70%) is the user's signal to `/compact` or start a fresh session. On a model where `autoCompactWindow` takes effect, compaction fires before the band is reached; on a model whose window is at or below that value, the band remains the manual cue. |
 
 Everything else is **out of scope on purpose** - we do NOT write `env`,
 `enabledPlugins`, `extraKnownMarketplaces`, `autoUpdatesChannel`,
@@ -228,7 +229,8 @@ verify-the-artifact loop, just on prose instead of JSON:
 - **By hand:** delete the block from `<!-- paradise:baseline start -->` through
   `<!-- paradise:baseline end -->` in `~/.claude/CLAUDE.md` (and
   `~/.codex/AGENTS.md`); remove the `attribution`, `agentPushNotifEnabled`,
-  `idleCompaction`, and `statusLine` keys from `~/.claude/settings.json` (keep it valid JSON); and
+  `idleCompaction`, `autoCompactWindow` (or set it to `"auto"`), and
+  `statusLine` keys from `~/.claude/settings.json` (keep it valid JSON); and
   delete `~/.claude/statusline-command.sh`.
 
 ## Contextual human escalation
