@@ -32,16 +32,6 @@
       "category": "productivity"
     },
     {
-      "name": "project-guide",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/rschlek/project-guide.git",
-        "ref": "stable"
-      },
-      "description": "A simple standard for laying out, naming, and describing projects, with skills to create a new project to it or bring an existing repository up to it.",
-      "category": "productivity"
-    },
-    {
       "name": "playbook",
       "source": {
         "source": "url",

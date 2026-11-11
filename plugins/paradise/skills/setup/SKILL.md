@@ -33,7 +33,7 @@ to be after the restart in step 4.
    installed rather than as choices; on a re-run with everything chosen
    already in place, ask only what is still open.
    - Plugins. Checked by default: `productivity`, `terminal`. Offered:
-     `project-guide`, `playbook`, `playwright-mcp-shared`, `todoist` (for Todoist users;
+     `playbook`, `playwright-mcp-shared`, `todoist` (for Todoist users;
      it authorizes the Todoist MCP server on first use). Listed but
      unchecked: `memory`, which needs a Hindsight memory server; off unless
      the user has one.

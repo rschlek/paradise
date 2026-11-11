@@ -43,19 +43,6 @@
       "category": "Productivity"
     },
     {
-      "name": "project-guide",
-      "source": {
-        "source": "url",
-        "url": "https://github.com/rschlek/project-guide.git",
-        "ref": "stable"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Productivity"
-    },
-    {
       "name": "playbook",
       "source": {
         "source": "url",
