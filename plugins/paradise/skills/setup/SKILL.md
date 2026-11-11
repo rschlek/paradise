@@ -95,8 +95,9 @@ to be after the restart in step 4.
      from `<!-- paradise:baseline start -->` to
      `<!-- paradise:baseline end -->` in `~/.claude/CLAUDE.md` (and
      `~/.codex/AGENTS.md`), remove the `attribution`,
-     `agentPushNotifEnabled`, and `statusLine` keys from
-     `~/.claude/settings.json`, and delete `~/.claude/statusline-command.sh`;
+     `agentPushNotifEnabled`, `idleCompaction`, `autoCompactWindow`, and
+     `statusLine` keys from `~/.claude/settings.json`, and delete
+     `~/.claude/statusline-command.sh`;
      and `claude plugin uninstall <plugin>@paradise` (in Codex, remove it
      from the plugins menu);
    - whether a restart and a second `/paradise:setup` run are still needed.
