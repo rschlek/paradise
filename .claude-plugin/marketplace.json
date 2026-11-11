@@ -42,6 +42,16 @@
       "category": "productivity"
     },
     {
+      "name": "playbook",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/rschlek/playbook.git",
+        "ref": "stable"
+      },
+      "description": "How a project is set up and how work moves through it, for any kind of project: a small standard for laying out and describing projects, tracker docs that tell agents how to read and write tickets in any tracker, and skills to set up or adopt a project, chart open decisions as a map, turn a finished plan into tickets, capture a ticket, tackle one, say where a project stands and what comes next, and think the work through (grill a plan, sharpen terms, research, prototype, untangle).",
+      "category": "productivity"
+    },
+    {
       "name": "playwright-mcp-shared",
       "source": {
         "source": "url",
