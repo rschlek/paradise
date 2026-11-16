@@ -78,7 +78,7 @@ repos. It is also a template for anyone who wants a marketplace of their own.
   optional `.codex-plugin/`, `agents/`, `references/`, `hooks/`.
 - `skill-template/`: the starting point for a new skill.
 - `scripts/validate.py`: the pre-commit check.
-- `docs/project-conventions.md`: the project-guide rules, copied; do not edit.
+- `docs/project-conventions.md`: the playbook rules, copied; do not edit.
 
 A skill's invocation name is `<plugin>:<skill-dir>`, such as `paradise:setup`;
 an agent's is `<plugin>:<agent>`.

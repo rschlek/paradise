@@ -135,7 +135,7 @@ Use this repo as a template for your own marketplace, private or public:
    separated), so the check catches them without publishing them.
 
 `docs/project-conventions.md` is a copy of the rules of the
-[project-guide](https://github.com/rschlek/project-guide) standard this repo
+[playbook](https://github.com/rschlek/playbook) standard this repo
 follows.
 
 ## Support
