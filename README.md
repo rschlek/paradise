@@ -109,7 +109,6 @@ In short:
 | [`terminal`](https://github.com/rschlek/terminal) | A shared WezTerm window for interactive logins, seeded chats in Warp tabs, Warp and WezTerm setup. | yes |
 | [`playbook`](https://github.com/rschlek/playbook) | The project standard plus tracker-agnostic workflow skills: new, adopt, sync, setup-playbook-profile, tackle, capture, next, wayfinder, to-tickets, grill-me, glossary, research, prototype, untangle. | offered |
 | [`playwright-mcp-shared`](https://github.com/rschlek/playwright-mcp-shared) | One Playwright MCP browser shared safely by concurrent agent sessions. | offered |
-| [`todoist`](https://github.com/rschlek/todoist) | Todoist skills: capture, inbox triage with an overdue walk, idea pruning, board reconcile, structure review. Uses Doist's hosted Todoist MCP server. | offered |
 | [`memory`](https://github.com/rschlek/memory) | Long-term memory skills. Needs a running [Hindsight](https://github.com/vectorize-io/hindsight) memory server (open source). | off |
 
 External plugins follow each repo's `stable` branch.
