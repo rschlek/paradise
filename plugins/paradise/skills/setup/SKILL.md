@@ -33,10 +33,8 @@ to be after the restart in step 4.
    installed rather than as choices; on a re-run with everything chosen
    already in place, ask only what is still open.
    - Plugins. Checked by default: `productivity`, `terminal`. Offered:
-     `playbook`, `playwright-mcp-shared`, `todoist` (for Todoist users;
-     it authorizes the Todoist MCP server on first use). Listed but
-     unchecked: `memory`, which needs a Hindsight memory server; off unless
-     the user has one.
+     `playbook`, `playwright-mcp-shared`. Listed but unchecked: `memory`,
+     which needs a Hindsight memory server; off unless the user has one.
    - Terminal: Warp, WezTerm, or neither.
    - Keep-awake tool, asked only when one that works by faking keypresses is
      running (on Windows, Caffeine: a `caffeine64.exe` or `caffeine.exe`

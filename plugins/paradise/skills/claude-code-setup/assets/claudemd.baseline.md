@@ -46,8 +46,9 @@ work and return a conclusion. Don't wait to be asked for a subagent.
   context; spawn fresh otherwise.
 - Breakout vs subagent: need the answer back here → subagent. The user needs to
   drive it → breakout. Never both for the same question.
-- Fan out right after a compaction, never right before; never compact with
-  agents in flight.
+- Fan out right after a compaction, never right before; don't start a large
+  fan-out when context is already high, checkpoint first. Never compact by
+  hand with agents in flight.
 
 ## Autonomy — the gate is reversibility, not caution
 
@@ -92,8 +93,11 @@ work and return a conclusion. Don't wait to be asked for a subagent.
   before restarting or reconfiguring a shared resource, check and say so.
   Cross-session state goes in memory or a file, not relayed by the user.
 - No paid service, API spend, or purchase without asking first, with the price.
-- Keep this session under ~50% context: externalize working state to files and
-  memory, and say when it's a good moment to compact.
+- Keep working state outside the conversation as you go (files, the tracker,
+  memory) so a compaction at any moment loses nothing, and checkpoint at
+  natural boundaries. Where the harness compacts automatically, don't ask the
+  user to compact or pause work for it. Where it doesn't, keep the session
+  under ~50% context and say when it's a good moment to compact.
 
 ## Secrets & exposure
 
