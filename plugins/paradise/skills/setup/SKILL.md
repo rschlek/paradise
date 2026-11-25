@@ -93,8 +93,8 @@ to be after the restart in step 4.
      from `<!-- paradise:baseline start -->` to
      `<!-- paradise:baseline end -->` in `~/.claude/CLAUDE.md` (and
      `~/.codex/AGENTS.md`), remove the `attribution`,
-     `agentPushNotifEnabled`, `idleCompaction`, `autoCompactWindow`, and
-     `statusLine` keys from `~/.claude/settings.json`, and delete
+     `agentPushNotifEnabled`, `idleCompaction`, `autoCompactEnabled`,
+     `autoCompactWindow`, and `statusLine` keys from `~/.claude/settings.json`, and delete
      `~/.claude/statusline-command.sh`;
      and `claude plugin uninstall <plugin>@paradise` (in Codex, remove it
      from the plugins menu);

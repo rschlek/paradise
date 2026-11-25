@@ -29,8 +29,8 @@ also ship to Codex through `.codex-plugin/plugin.json`.
   `<!-- paradise:baseline end -->` in `~/.claude/CLAUDE.md` and
   `~/.codex/AGENTS.md`.
 - Remove the `attribution`, `agentPushNotifEnabled`, `idleCompaction`,
-  `autoCompactWindow`, and `statusLine` keys from `~/.claude/settings.json`,
-  and delete `~/.claude/statusline-command.sh`.
+  `autoCompactEnabled`, `autoCompactWindow`, and `statusLine` keys from
+  `~/.claude/settings.json`, and delete `~/.claude/statusline-command.sh`.
 - `claude plugin uninstall <plugin>@paradise` for each installed plugin.
 
 ## Assets

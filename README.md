@@ -74,8 +74,8 @@ To undo:
   `<!-- paradise:baseline end -->` in `~/.claude/CLAUDE.md` (and
   `~/.codex/AGENTS.md`).
 - Remove the `attribution`, `agentPushNotifEnabled`, `idleCompaction`,
-  `autoCompactWindow`, and `statusLine` keys from `~/.claude/settings.json`,
-  and delete `~/.claude/statusline-command.sh`.
+  `autoCompactEnabled`, `autoCompactWindow`, and `statusLine` keys from
+  `~/.claude/settings.json`, and delete `~/.claude/statusline-command.sh`.
 - `claude plugin uninstall <plugin>@paradise` for each plugin (in Codex, remove
   it from the plugins menu).
 
